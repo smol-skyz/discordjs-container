@@ -1,4 +1,4 @@
-FROM        --platform=$TARGETOS/$TARGETARCH node:18-alpine
+FROM        node:18
 
 LABEL       author="Skyz" maintainer="docker-public@skyz.xyz"
 

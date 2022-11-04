@@ -5,7 +5,8 @@ LABEL       author="Skyz" maintainer="docker-public@skyz.xyz"
 LABEL       org.opencontainers.image.source="https://github.com/thatskyz/discordjs-container"
 LABEL       org.opencontainers.image.licenses=MIT
 
-RUN         apt add --update --no-cache ca-certificates curl git openssl sqlite tar tzdata \
+RUN         apt update \
+	&& apt install ca-certificates curl git openssl tar tzdata \
 	&& adduser -D -h /home/container container
 
 USER        container

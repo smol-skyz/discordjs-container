@@ -6,7 +6,7 @@ LABEL       org.opencontainers.image.source="https://github.com/thatskyz/discord
 LABEL       org.opencontainers.image.licenses=MIT
 
 RUN         apt update \
-	&& apt install -y ca-certificates curl git openssl tar tzdata \
+	&& apt install -y ca-certificates curl git openssl tar tzdata iproute2 \
 	&& adduser -D -h /home/container container
 
 USER        container

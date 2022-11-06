@@ -1,4 +1,4 @@
-FROM        node:18
+FROM        node:14
 
 LABEL       author="Skyz" maintainer="docker-public@skyz.xyz"
 
